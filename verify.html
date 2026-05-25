@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IROL Field Call: Verification</title>
+<style>
+  :root {
+    --bg: #0f1724;
+    --panel: #18222f;
+    --ink: #f4f6f8;
+    --muted: #9aa6b2;
+    --gold: #d4a437;
+    --silver: #b8c2cc;
+    --bronze: #b07a3a;
+    --red: #c04a3a;
+    --blue: #2b6cb0;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    min-height: 100vh;
+    padding: 40px 24px;
+  }
+  .wrap {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: 0.2px;
+  }
+  p.lede {
+    color: var(--muted);
+    margin: 0 0 32px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  a.btn {
+    display: block;
+    background: var(--panel);
+    color: var(--ink);
+    text-decoration: none;
+    padding: 22px 24px;
+    border-radius: 10px;
+    border-left: 6px solid var(--blue);
+    transition: transform 0.12s ease, background 0.12s ease;
+  }
+  a.btn:hover {
+    background: #20303f;
+    transform: translateX(2px);
+  }
+  a.btn .label {
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+  }
+  a.btn .url {
+    font-size: 12px;
+    color: var(--muted);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    word-break: break-all;
+  }
+  a.btn.gold { border-left-color: var(--gold); }
+  a.btn.silver { border-left-color: var(--silver); }
+  a.btn.bronze { border-left-color: var(--bronze); }
+  a.btn.red { border-left-color: var(--red); }
+  a.btn.sim { border-left-color: var(--blue); }
+  footer {
+    margin-top: 40px;
+    color: var(--muted);
+    font-size: 13px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>IROL Field Call: Route Verification</h1>
+  <p class="lede">Click each button to confirm the simulation and the four tier modules load. Use this page on the live URL after the first push, or open it locally to test routing.</p>
+
+  <div class="grid">
+    <a class="btn sim" href="https://marissamellorgates-bit.github.io/irol-field-call/storyline/story.html" target="_blank" rel="noopener">
+      <span class="label">Module 1. Storyline simulation</span>
+      <span class="url">https://marissamellorgates-bit.github.io/irol-field-call/storyline/story.html</span>
+    </a>
+    <a class="btn gold" href="https://marissamellorgates-bit.github.io/irol-field-call/rise_gold/index.html" target="_blank" rel="noopener">
+      <span class="label">Gold. Light Reinforcement</span>
+      <span class="url">https://marissamellorgates-bit.github.io/irol-field-call/rise_gold/index.html</span>
+    </a>
+    <a class="btn silver" href="https://marissamellorgates-bit.github.io/irol-field-call/rise_silver/index.html" target="_blank" rel="noopener">
+      <span class="label">Silver. Communication and Trust</span>
+      <span class="url">https://marissamellorgates-bit.github.io/irol-field-call/rise_silver/index.html</span>
+    </a>
+    <a class="btn bronze" href="https://marissamellorgates-bit.github.io/irol-field-call/rise_bronze/index.html" target="_blank" rel="noopener">
+      <span class="label">Bronze. Compliance and Procedure</span>
+      <span class="url">https://marissamellorgates-bit.github.io/irol-field-call/rise_bronze/index.html</span>
+    </a>
+    <a class="btn red" href="https://marissamellorgates-bit.github.io/irol-field-call/rise_red/index.html" target="_blank" rel="noopener">
+      <span class="label">Red. Full Remediation</span>
+      <span class="url">https://marissamellorgates-bit.github.io/irol-field-call/rise_red/index.html</span>
+    </a>
+  </div>
+
+  <footer>IROL Field Call. Built by Marissa Gates, 2026.</footer>
+</div>
+</body>
+</html>
